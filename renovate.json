@@ -4,7 +4,7 @@
   "branchConcurrentLimit": 20,
   "prConcurrentLimit": 20,
   "prHourlyLimit" : 30,
-  "extends": ["config:recommended"],
+  "extends": ["config:recommended","github>berowil/renovate-config"],
   "automergeType": "pr",
   "osvVulnerabilityAlerts": true,
   "vulnerabilityAlerts": {
