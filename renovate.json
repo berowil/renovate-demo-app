@@ -15,7 +15,9 @@
   "customManagers": [
     {
       "customType": "regex",
-      "fileMatch": ["^tool-versions\\.txt$"],
+      "managerFilePatterns": [
+        "/^tool-versions\\.txt$/"
+      ],
       "matchStrings": ["node=(?<currentValue>[\\d\\.]+)\\n"],
       "depNameTemplate": "nodejs/node",
       "datasourceTemplate": "github-releases",
