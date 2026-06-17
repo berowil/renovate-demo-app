@@ -1,5 +1,9 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "configMigration": true,
+  "branchConcurrentLimit": 20,
+  "prConcurrentLimit": 20,
+  "prHourlyLimit" : 30,
   "extends": ["config:recommended"],
   "customManagers": [
     {
