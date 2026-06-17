@@ -1,6 +1,16 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:recommended"],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "fileMatch": ["^tool-versions\\.txt$"],
+      "matchStrings": ["node=(?<currentValue>[\\d\\.]+)\\n"],
+      "depNameTemplate": "nodejs/node",
+      "datasourceTemplate": "github-releases",
+      "versioningTemplate": "node"
+    }
+  ],
   "packageRules": [
     {
       "matchPackagePatterns": ["^@types/"],
