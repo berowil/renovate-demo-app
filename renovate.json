@@ -8,6 +8,18 @@
       "matchDepTypes": ["devDependencies"],
       "matchUpdateTypes": ["patch"],
       "automerge": true
+    },
+    {
+      "matchPackagePatterns": ["^@types/"],
+      "automerge": false
+    },
+    {
+      "matchPackagePatterns": ["^@angular/"],
+      "automerge": false
+    },
+    {
+      "matchPackagePatterns": ["eslint"],
+      "automerge": false
     }
   ]
 }
