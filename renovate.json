@@ -5,6 +5,13 @@
   "prConcurrentLimit": 20,
   "prHourlyLimit" : 30,
   "extends": ["config:recommended"],
+  "automergeType": "pr",
+  "osvVulnerabilityAlerts": true,
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": ["security"],
+    "automerge": true
+  },
   "customManagers": [
     {
       "customType": "regex",
@@ -31,7 +38,20 @@
       ],
       "groupName": "major dependencies",
       "groupSlug": "major",
+      "automerge": false,
       "enabled": true,
+      "matchPackageNames": [
+        "*"
+      ]
+    },
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-minor-patch",
+      "automerge": true,
       "matchPackageNames": [
         "*"
       ]
