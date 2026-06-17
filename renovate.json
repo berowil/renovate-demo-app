@@ -13,25 +13,15 @@
   ],
   "packageRules": [
     {
-      "matchPackagePatterns": ["^@types/"],
-      "groupName": "TypeScript type definitions",
-      "automerge": true
-    },
-    {
-      "matchDepTypes": ["dependencies"],
-      "matchUpdateTypes": ["major"],
-      "prPriority": 5,
-      "automerge": false
-    },
-    {
-      "matchDepTypes": ["devDependencies"],
-      "matchUpdateTypes": ["patch"],
-      "automerge": true,
-      "prPriority": -1
-    },
-    {
-      "matchPackageNames": ["helm"],
-      "versioning": "semver"
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "groupName": "major dependencies",
+      "groupSlug": "major",
+      "enabled": true,
+      "matchPackageNames": [
+        "*"
+      ]
     }
   ]
 }
