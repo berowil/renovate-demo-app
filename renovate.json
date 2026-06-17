@@ -13,6 +13,15 @@
       "depNameTemplate": "nodejs/node",
       "datasourceTemplate": "github-releases",
       "versioningTemplate": "node"
+    },
+    {
+      "customType": "regex",
+      "managerFilePatterns": [
+        "/^deployment\\/deployment\\.ya?ml$/"
+      ],
+      "matchStrings": ["image:\\s+(?<depName>[a-z0-9\\-]+):(?<currentValue>[\\d\\.]+)"],
+      "datasourceTemplate": "docker",
+      "versioningTemplate": "docker"
     }
   ],
   "packageRules": [
