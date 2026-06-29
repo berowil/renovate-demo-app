@@ -8,7 +8,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <!-- absichtlich veraltete Version – aktuell: 3.x -->
-        <version>2.7.18</version>
+        <version>4.1.0</version>
         <relativePath/>
     </parent>
 
@@ -32,7 +32,7 @@
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>32.1.3-jre</version>
+            <version>33.6.0-jre</version>
         </dependency>
 
         <!-- absichtlich veraltete Version – aktuell: 3.14.x -->
